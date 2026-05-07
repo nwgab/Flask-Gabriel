@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artemis II | Missão Lunar </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <!-- Elementos cinematográficos -->
+    <div class="stars-layer">
+        <div class="stars stars-1"></div>
+        <div class="stars stars-2"></div>
+        <div class="stars stars-3"></div>
+    </div>
+    <div class="vignette"></div>
+    <div class="scanlines"></div>
+    <div class="cinematic-bar"></div>
+
+    <header>
+        <div class="lens-flare"></div>
+        <h1>Artemis</h1>
+        <img class="logo" src="{{ url_for('static', filename='Artemis_logo.png') }}" alt="Logo Artemis">
+    </header>
+
+    <main>
+        <img class="logo" src="{{ url_for('static', filename='Artemis_logo.png') }}" alt="Logo Artemis">
+        
+        <h2>Sobre a Missão</h2>
+
+        <h3>
+            <strong>Presença Sustentável e a Base Lunar</strong>
+            Diferente das visitas curtas do passado, a NASA e seus parceiros internacionais planejam criar infraestrutura para que seres humanos possam viver e trabalhar na Lua por longos períodos.
+        </h3>
+
+        <h3>
+            <strong>Gateway Lunar</strong>
+            Como uma pequena estação espacial que orbitará a Lua, servindo como ponto de parada, centro de comunicações e laboratório científico.
+        </h3>
+
+        <h3>
+            <strong>A Lua como Degrau para Marte</strong>
+            O objetivo final não é apenas a Lua, mas o "Salto Gigante" seguinte: Marte. A Lua servirá como um campo de testes tecnológico.
+        </h3>
+
+        <h3>
+            <strong>Recursos Locais</strong>
+            A NASA tem objetivo de aprender a extrair recursos locais (como água congelada nas crateras do Polo Sul) para criar combustível e oxigênio.
+        </h3>
+
+        <h3>
+            <strong>Ciência e Descoberta Econômica</strong>
+            A exploração do Polo Sul lunar é estratégica.
+            
+            <strong>Geologia:</strong> Estudar a história do Sistema Solar preservada nas rochas lunares.
+            <strong>Economia Lunar:</strong> Abrir caminho para empresas privadas e a "Economia Cis-Lunar".
+        </h3>
+
+        <h3>
+            <strong>Representatividade e Inspiração</strong>
+            A Artemis carrega um forte simbolismo. A missão tem o compromisso de levar a primeira mulher à superfície lunar.
+        </h3>
+
+        <!-- SEÇÃO DAS 5 IMAGENS CINEMATOGRÁFICAS -->
+        <div class="image-gallery">
+            <div class="section-title">VISUALIZAÇÕES DA MISSÃO</div>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img class="logo" src="{{ url_for('static', filename='lado_oculto_lua.jpg') }}" alt="Logo Artemis">
+                    <div class="overlay">Lado Oculto da Lua</div>
+                </div>
+                <div class="gallery-item">
+                    <img class="logo" src="{{ url_for('static', filename='Tripulação.webp') }}" alt="Logo Artemis">
+                    <div class="overlay">Missão Artemis II</div>
+                </div>
+                <div class="gallery-item">
+                    <img class="logo" src="{{ url_for('static', filename='Foguete_artemis.png') }}" alt="Logo Artemis">
+                    <div class="overlay">Foguete Artemis</div>
+                </div>
+                <div class="gallery-item">
+                    <img class="logo" src="{{ url_for('static', filename='Passo a Passo.webp') }}" alt="Logo Artemis">
+                    <div class="overlay">Tragetória da Artemis II</div>
+                </div>
+                <div class="gallery-item">
+                    <img class="logo" src="{{ url_for('static', filename='Estação Espacial.jpg') }}" alt="Logo Artemis">
+                    <div class="overlay">Estação Espacial</div>
+                </div>
+            </div>
+        </div>
+        <!-- FIM DAS IMAGENS -->
+    </main>
+
+    <footer>
+        <h6>• ARTEMIS LTDA 2026</h6>
+    </footer>
+    
+</body>
+</html>
